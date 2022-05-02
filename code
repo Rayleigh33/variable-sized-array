@@ -1,0 +1,27 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+    int n,q,i,j,k,s;
+    cin>>n>>q;
+    vector<int> v[n];
+    for(i=0;i<n;i++)
+    {
+        cin>>s;
+        v[i].resize(s);
+        for(j=0;j<s;j++)
+        {
+            cin>>v[i][j];
+        }
+    }
+    for(k=0;k<q;k++)
+    {
+        cin>>i>>j;
+        cout<<v[i][j]<<"\n";
+    }
+    return 0;
+}
